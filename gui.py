@@ -116,7 +116,7 @@ def recognize_digit():
 
 if __name__ == '__main__':
     root = tk.Tk()
-    root.title("28×28像素化手写数字识别")
+    root.title("手写数字识别")
     root.resizable(False, False)  # 固定窗口大小
 
     # 创建28×28像素格画布
@@ -150,5 +150,6 @@ if __name__ == '__main__':
     win_x = (screen_w - CANVAS_W) // 2
     win_y = (screen_h - CANVAS_H - 100) // 2
     root.geometry(f"{CANVAS_W}x{CANVAS_H + 150}+{win_x}+{win_y}")
+
 
     root.mainloop()
