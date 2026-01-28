@@ -88,7 +88,7 @@ def main():
         train_losses = []  # 记录每批次训练损失
         for x, y in train_data:
             x, y = x.to(device), y.to(device)
-            net.zero_grad()  # 修正注释：清空模型梯度，避免梯度累积
+            net.zero_grad()  # 清空模型梯度
             outputs = net(x)
             loss = torch.nn.functional.cross_entropy(outputs, y)
             loss.backward()
@@ -121,3 +121,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
