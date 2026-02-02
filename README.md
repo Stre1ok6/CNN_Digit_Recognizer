@@ -1,4 +1,9 @@
 # CNN_Digit_Recognizer
+
+[![Python 3.10](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/)
+[![PyTorch 2.10](https://img.shields.io/badge/PyTorch-2.10-red.svg)](https://pytorch.org/)
+[![GitHub stars](https://img.shields.io/github/stars/Stre1ok6/CNN_Digit_Recognizer.svg?style=social)](https://github.com/Stre1ok6/CNN_Digit_Recognizer)
+
 本项目基于卷积神经网络（CNN）实现 MNIST 手写数字数据集的识别，包含模型训练脚本（model.py）和可视化交互界面脚本（gui.py），支持训练模型并通过手绘方式实时识别数字。
 
 ## 神经网络结构
@@ -37,6 +42,5 @@ pip install torch torchvision matplotlib pillow numpy
 
 启动界面后，在黑色画布上用鼠标左键手绘 0-9 的数字；   
 绘制完成后点击“识别”按钮，下方会显示模型识别的数字结果；   
-如需重新绘制，点击“清除”按钮清空画布即可。
-
+如需重新绘制，点击“清除”按钮清空画布即可。    
 *\*手绘数字时尽量居中、清晰，贴合 MNIST 数据集的手写风格，可提升识别准确率*
